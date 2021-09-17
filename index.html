@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Back End Assessment</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+      
+      
+  <div class="to-do-list">
+      <form>
+        <header>
+          <h1>To Do List</h1>
+          <input 
+              type='text'
+              id="name"
+              placeholder="Add item"
+              required/>
+          <button class="add-btn">Add</button>
+        </header>
+        
+      
+  
+     
+    </form>
+    <section id="user-container"></section>
+    </div>
+
+  
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="./main.js"></script>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--=|===============
+            Javascript
+    ================== -->
+
+
+    <!-- <script>
+      document.getElementById("complimentButton").onclick = function () {
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+      document.getElementById("testingBtn").onclick = function () {
+        axios.get("http://localhost:4000/api/testing/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+      document.getElementById("button").onclick = function () {
+        axios
+          .get("http://localhost:4000/api/users")
+          .then(function (response) {
+            const data = response.data;
+            document.getElementById("people").innerHTML = data
+              .map(function (person) {
+                return '<li class="row">' + person;
+              })
+              .join("");
+          })
+          .catch(function (err) {
+            document.getElementById("people").innerHTML =
+              '<li class="text-danger">' + err.message + "</li>";
+          });
+      };
+      document.getElementById('delete').onclick = function () {
+        axios
+          .delete("http://localhost:4000/api/users/:id")
+          .then(function(response) {
+            const data = response.data;
+          })
+      };
+      document.getElementById('add').submit = function () {
+        axios
+          .post("http://localhost:4000/api/users")
+          .then(function(response) {
+            const data = response.data;
+          })
+      };
+
+
+
+      
+
+
+    
+
+    </script> -->
+    
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html> -->
